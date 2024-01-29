@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Thông tin đăng ký</h1>
+    <form method="POST">
+        {{ form.csrf_token }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=20) }}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=20) }}
+        </p>
+        <p>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password(size=20) }}
+        </p>
+        <p>
+            {{ form.first_name.label }}<br>
+            {{ form.first_name(size=20) }}
+        </p>
+        <p>
+            {{ form.last_name.label }}<br>
+            {{ form.last_name(size=20) }}
+        </p>
+        <p>
+            {{ form.birthdate.label }}<br>
+            {{ form.birthdate() }}
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=30) }}
+        </p>
+        <p>
+            {{ form.income.label }}<br>
+            {{ form.income() }}
+        </p>
+        <p>
+            {{ form.gender.label }}<br>
+            {{ form.gender() }}
+        </p>
+        <p>
+            {{ form.address.label }}<br>
+            {{ form.address(size=40) }}
+        </p>
+        <p>
+            {{ form.phone.label }}<br>
+            {{ form.phone(size=20) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+</head>
+<body>
+    <h1>Passenger Information Submitted</h1>
+    <h2>Thank you for your submission!</h2>
+    <h3>Passenger Information:</h3>
+    <ul>
+        {% for key, value in passenger_info.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
