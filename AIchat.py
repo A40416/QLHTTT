@@ -26,7 +26,7 @@ def send_message():
     u = user_entry.get()
     user = Label(chat_bg, height=1, width=64, bg='#a6a6a6', fg='black', text=u + ' <You ', font=12, anchor='e')
     user.place(x=xi, y=yi)
-
+ 
     # Sử dụng OpenAI GPT-3 để tạo phản hồi
     bot_response = generate_bot_response(u)
 
